@@ -12,8 +12,17 @@ body{
     justify-content: space-between;
     align-items: center;
     padding:0px 10px;
+    width: 100%;
     border-bottom: 1px solid lightgray;
 }
+
+/* .navv{
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 9999 !important;
+    background-color: white;
+
+} */
 
 .navbars h1{
     font-family: "Playfair Display", serif;
@@ -148,6 +157,9 @@ body{
         line-height: 49px;
         font-weight: 600;
         font-style: italic;
+    }
+    .navbars{
+        padding: 5px 10px;
     }
     .longdes,.longref{
         font-size: 17px;

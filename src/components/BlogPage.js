@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import TagSlider from '../elements/TagSlider'
 import BlogCard from '../elements/BlogCard'
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
@@ -83,6 +84,8 @@ console.log(formattedDate);
     };
     return (
 <>
+    <TagSlider/>
+
     <div className='longblog'>
       <div className='container-fluid'>
             <div className='row p-5'>
@@ -300,8 +303,6 @@ console.log(formattedDate);
       </Button>
 
       <Modal show={show} centered size="lg" onHide={handleClose}>
-        {/* <Modal.Header closeButton>
-        </Modal.Header> */}
           <h3 className='text-center my-2'>Add New Blog</h3>
         <Modal.Body>
             <form onSubmit={handleSubmit}>
